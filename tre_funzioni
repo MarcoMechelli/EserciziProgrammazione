@@ -1,0 +1,23 @@
+#include <stdio.h>
+int f1 (void);
+int f2 (int x, int a);
+int a;
+int main ()
+{
+int b,c,d;
+b=7;
+c=f1 (); 
+d=f2(b,c);
+printf("%d,%d,%d",b,c,d);
+}
+int f1(void)
+{
+a=12;
+printf("%d,",a);
+return (a+5);
+}
+int f2(int x, int a)
+{
+printf ("%d,",a);
+return (x*a);
+}
